@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto&display=swap");
 
+#logo-link {
+  padding-top: 5px;
+}
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -9,6 +13,7 @@ nav a {
   text-align: center;
   color: #a8dadc;
   text-decoration: none;
+  padding: 35px;
 }
 
 #hero-img {
@@ -27,17 +32,32 @@ main {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 #background {
-  background-color: #1d3557;
+  background-color: #e63946;
   height: 725px;
 }
 
 body {
   background-color: #1d3557;
   color: #a8dadc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
-home-title {
+
+h2 {
+  margin: 0;
+}
+
+.home-title {
   color: #e63946;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 h4 {
@@ -60,23 +80,47 @@ nav a:hover {
   background-color: #1d3557;
   color: #a8dadc;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,
 .join:hover {
-  background-color: #1d3557;
+  background-color: #e63946;
 }
 
 .msg {
-  background-color: #1d3557;
+  background-color: #a8dadc;
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2,
 .msg p {
   color: #e63946;
+  font-family: sans-serif;
+  font-size: 0.8em;
 }
+.msg- p {
+  padding-bottom: 15px;
+}
+.rivers-card .camping-card .rapids-card {
+  margin-top: 200px;
+}
+.card-img {
+  border: 10px solid black;
+}
+
 footer {
-  background-color: #1d3557;
+  background-color: #a8dadc;
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+.name {
+  color: black;
 }
 
 footer a {
@@ -88,12 +132,17 @@ footer a:hover {
   color: #e63946;
 }
 
+.footer .social img {
+  padding-top: 15px;
+}
+
 .logo {
   width: 80px;
 }
 
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 
 #hero-img {
