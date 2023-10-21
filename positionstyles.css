@@ -1,0 +1,258 @@
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+
+  /* This is the parent of the activity 1 boxes. */
+}
+.red1 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1/3;
+}
+
+.green1 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+.yellow1 {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+}
+
+.blue1 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-column: 1/3;
+}
+
+/* Activity 2 styles */
+.content2 {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  justify-items: auto;
+  margin: 40px;
+
+  /* This is the parent of the activity 2 boxes. */
+}
+.red2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.green2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-top: 50px;
+}
+.yellow2 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  margin-top: 100px;
+}
+.blue2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin-top: 150px;
+}
+
+/* Activity 3 styles */
+.content3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 50px;
+
+  /* This is the parent of the activity 3 boxes. */
+}
+.red3 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1/3;
+}
+.green3 {
+  width: 400px;
+  height: 200px;
+  background-color: green;
+}
+.yellow3 {
+  width: 400px;
+  height: 200px;
+  background-color: gold;
+}
+.blue3 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-column: 1/3;
+}
+/* Activity 4 styles */
+.content4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* This is the parent of the activity 4 boxes. */
+  height: 400px;
+}
+.red4 {
+  width: 200px auto;
+  height: 400px;
+  background-color: red;
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.green4 {
+  width: 200px auto;
+  height: 133px;
+  background-color: green;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.yellow4 {
+  width: 200px auto;
+  height: 133px;
+  background-color: gold;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.blue4 {
+  width: 200px auto;
+  height: 133px;
+  background-color: blue;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+/* Activity 5 styles */
+.content5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  /* This is the parent of the activity 5 boxes. */
+  height: 400px;
+}
+.red5 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1/3;
+}
+.green5 {
+  width: 50%;
+  height: 200px;
+  background-color: green;
+  float: left;
+  grid-row: 2;
+  grid-column: 1;
+  z-index: 2;
+}
+.yellow5 {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-color: gold;
+  float: left;
+  grid-row: 2;
+  grid-column: 1/3;
+  z-index: 1;
+
+}
+.blue5 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-row: 5;
+  grid-column: 1/3;
+}
+
+
+/* Activity 6 styles */
+
+.content6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: none;
+  /* This is the parent of the activity 6 boxes. */
+}
+.red6 {
+  width: 400px;
+  height: 200px;
+  background-color: red;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+.green6 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-top: -200px;
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 3;
+}
+.yellow6 {
+  width: 200px;
+  height: 400px;
+  background-color: gold;
+  grid-column: 2;
+  grid-row: 2/3;
+  z-index: 4;
+}
+.blue6 {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  margin-top: 100px;
+  margin-left: 100px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  z-index: 2;
+}
+
+/* Do not make any changes below here */
+.activity {
+  width: 70%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+  padding: 10px;
+  clear: both;
+  overflow: auto;
+}
+
+.hint {
+  border: 1px solid grey;
+  background: #e0e0e0;
+  padding: 0.5em;
+  position: relative;
+  margin: 1em 0;
+}
+.hint h3 {
+  margin: 0;
+}
+.hint:hover {
+  background: #d0d0d0;
+}
+.hint > div {
+  display: none;
+}
+
+.hint input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cu
