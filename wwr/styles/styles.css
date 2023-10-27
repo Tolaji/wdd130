@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto&display=swap");
 
-#logo-link {
+#logo_link {
   padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
 }
 
 #container {
@@ -214,17 +221,6 @@ footer a:hover {
 
 .footer .social img {
   padding-top: 15px;
-}
-
-.logo {
-  width: 80px;
-  border-radius: 50%;
-}
-
-#logo_link {
-  padding-top: 5px;
-  justify-self: center;
-  align-self: center;
 }
 
 .icon {
