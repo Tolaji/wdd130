@@ -244,7 +244,7 @@ footer p:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   #hero,
   .home-grid {
     display: block;
