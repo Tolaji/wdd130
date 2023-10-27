@@ -133,13 +133,13 @@ nav a:hover {
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 1.5em 3em;
   grid-template-areas:
     ". . home home . ."
     ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+    ". left . center . right ."
+    ". page2 . page3 . page4 .";
 }
 .sitemap > div {
   text-align: center;
@@ -148,43 +148,59 @@ nav a:hover {
   grid-area: home;
   background-color: #ccc;
   line-height: 3em;
+  grid-column: 5/7;
+  grid-row: 1/2;
 }
 .sm-about {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
+  grid-column: 2/4;
+  grid-row: 5/6;
 }
 .sm-resume {
   grid-area: page3;
   background-color: #ccc;
   line-height: 3em;
+  grid-column: 5/7;
+  grid-row: 5/6;
 }
 
 .sm-contact {
-  grid-area: page3;
+  grid-area: page4;
   background-color: #ccc;
   line-height: 3em;
+  grid-column: 8/10;
+  grid-row: 5/6;
 }
 
 .top {
   grid-area: top;
   border-left: 1px solid;
+  grid-column: 6;
+  grid-row: 2/4;
 }
 
 .left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
+  grid-column: 3/6;
+  grid-row: 4;
 }
 
 .center {
   grid-area: center;
   border-top: 1px solid;
   border-left: 1px solid;
+  grid-column: 6;
+  grid-row: 4;
 }
 
 .right {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+  grid-column: 6/9;
+  grid-row: 4;
 }
