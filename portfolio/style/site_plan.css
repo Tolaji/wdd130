@@ -1,4 +1,4 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
+/* if you are using any Google fonts change the font names below to your fonts. mg
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100&family=Big+Shoulders+Inline+Text&display=swap");
@@ -38,6 +38,7 @@ body {
 img {
 	display: block;
 	margin: 0 auto;
+	padding: 10px;
 }
 h1,
 h2,
