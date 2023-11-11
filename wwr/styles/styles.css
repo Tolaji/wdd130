@@ -31,7 +31,7 @@ nav a {
   text-decoration: none;
   padding: 35px;
 }
-
+/* Hero Area */
 #hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -47,7 +47,6 @@ nav a {
 #hero-img {
   width: 100%;
 }
-
 #hero-msg {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -73,6 +72,7 @@ nav a {
   text-align: center;
 }
 
+/* Main Body Area */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -188,9 +188,12 @@ nav a:hover {
   grid-row: 2/3;
 }
 
+/* Rivers page */
+
 .trips {
   grid-column: 4/8;
   grid-row: 1/2;
+  padding-top: 50px;
 }
 
 .trips h4 {
@@ -200,17 +203,8 @@ nav a:hover {
 
 .ten {
   grid-column: 1/11;
-  grid-row: 9/15;
-}
-
-.fifteen {
-  grid-column: 1/11;
-  grid-row: 15/20;
-}
-
-.twenty {
-  grid-column: 1/11;
-  grid-row: 20/25;
+  grid-row: 1/8;
+  padding-top: 130px;
 }
 
 .ten-mountains {
@@ -219,9 +213,74 @@ nav a:hover {
   padding-top: 50px;
   padding-bottom: 50px;
   grid-column: 2/10;
+  grid-row: 2/6;
+}
+
+.ten-msg {
+  grid-column: 2/10;
+  grid-row: 6/8;
+}
+
+.rivers-text {
+  grid-column: 2/10;
+  grid-row: 13/15;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.fifteen {
+  grid-column: 1/11;
+  grid-row: 9/14;
+}
+
+.fifteen-mountains {
+  width: 80%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-column: 2/10;
   grid-row: 10/13;
 }
 
+.fifteen-msg {
+  grid-column: 2/10;
+  grid-row: 13/15;
+}
+
+.rivers-text-1 {
+  grid-column: 2/10;
+  grid-row: 19/20;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.twenty {
+  grid-column: 1/11;
+  grid-row: 14/19;
+}
+
+.twenty-mountains {
+  width: 80%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-column: 2/10;
+  grid-row: 10/13;
+}
+
+.twenty-msg {
+  grid-column: 2/10;
+  grid-row: 13/15;
+}
+
+.rivers-text-2 {
+  grid-column: 2/10;
+  grid-row: 24/25;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* Mountains card */
 #background {
   grid-column: 1/11;
   grid-row: 4/9;
@@ -238,11 +297,38 @@ nav a:hover {
   box-shadow: 5px 5px 10 #2f302d;
 }
 
-.ten-msg {
-  grid-column: 2/10;
-  grid-row: 13/15;
+/* Rivers page courses*/
+
+#rivers-background {
+  background-color: white;
+  height: 1300px;
+  grid-column: 1/11;
+  grid-row: 19/24;
+  padding-top: 20px;
+  z-index: -1;
 }
 
+.trips-courses {
+  color: #a8dadc;
+  grid-column: 4/8;
+  grid-row: 19/20;
+}
+
+.course-cards {
+  color: #a8dadc;
+  grid-column: 1/11;
+  grid-row: 20/24;
+}
+.one {
+  grid-column: 2/6;
+  grid-row: 20/21;
+}
+.two {
+  grid-column: 6/10;
+  grid-row: 20/21;
+}
+
+/* Footer */
 footer {
   background-color: #a8dadc;
   padding: 25px 50px;
@@ -272,10 +358,6 @@ footer a:hover {
 .icon {
   width: 80px;
   padding-top: 10px;
-}
-
-#hero-img {
-  width: 100%;
 }
 
 footer p {
