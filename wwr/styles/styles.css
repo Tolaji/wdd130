@@ -386,12 +386,13 @@ footer p:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   #hero,
   .home-grid {
     display: block;
     height: auto;
   }
+
   nav,
   footer {
     flex-direction: column;
@@ -431,4 +432,89 @@ footer p:hover {
   footer {
     margin-top: 25px;
   }
+} */
+
+/* Add your font import here */
+
+/* Rest of your CSS */
+
+@media screen and (max-width: 800px) {
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
+  }
+
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  #hero {
+    margin-top: 0;
+  }
+  #hero-msg {
+    margin-top: 0;
+  }
+  #hero-msg h4 {
+    display: none;
+  }
+  .home-title {
+    font-size: 25px;
+    color: #6f7364;
+  }
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+  #background {
+    display: none;
+  }
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .ten {
+    padding-top: 5px;
+  }
+  .rivers-text {
+    grid-column: 2/10;
+    grid-row: 13/15;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .rivers-text-1 {
+    grid-column: 2/10;
+    grid-row: 19/20;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .rivers-text-2 {
+    grid-column: 2/10;
+    grid-row: 24/25;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+  .course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  footer {
+    margin-top: none;
+  }
+  /* Add additional styles for smaller screens here */
 }
