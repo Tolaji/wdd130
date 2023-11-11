@@ -278,6 +278,7 @@ nav a:hover {
   grid-row: 24/25;
   padding-left: 150px;
   padding-right: 150px;
+  padding-bottom: 50px;
 }
 
 /* Mountains card */
