@@ -300,7 +300,7 @@ nav a:hover {
 
 /* Rivers page courses*/
 
-#rivers-background {
+/* #rivers-background {
   background-color: white;
   height: 1300px;
   grid-column: 1/11;
@@ -327,6 +327,104 @@ nav a:hover {
 .two {
   grid-column: 6/10;
   grid-row: 20/21;
+}
+.three {
+  grid-column: 2/6;
+  grid-row: 21/22;
+}
+.four {
+  grid-column: 6/10;
+  grid-row: 21/22;
+}
+.five {
+  grid-column: 2/6;
+  grid-row: 22/23;
+}
+.six {
+  grid-column: 6/10;
+  grid-row: 22/23;
+}
+.seven {
+  grid-column: 2/6;
+  grid-row: 23/24;
+}
+.eight {
+  grid-column: 6/10;
+  grid-row: 23/24;
+} */
+
+/* Rivers page courses */
+
+#rivers-background {
+  background-color: white;
+  height: 1300px;
+  grid-column: 1/13; /* Adjusted the column span to cover 12 columns */
+  grid-row: 19/26; /* Adjusted the row span to cover 7 rows */
+  padding-top: 20px;
+  z-index: -1;
+}
+
+.trips-courses {
+  color: #a8dadc;
+  grid-column: 4/10; /* Adjusted the column span to cover 6 columns */
+  grid-row: 19/20;
+}
+
+.course-cards {
+  color: #a8dadc;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjusted to a 2-column grid */
+  gap: 20px; /* Adjusted the gap between cards as needed */
+  grid-column: 1/13; /* Adjusted the column span to cover 12 columns */
+  grid-row: 20/26; /* Adjusted the row span to cover 6 rows */
+}
+
+/* Simplified the styling for the cards */
+.course-cards div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Adjusted the grid positions for each card */
+.one {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.two {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.three {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.four {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.five {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.six {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.seven {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.eight {
+  grid-column: span 5;
+  grid-row: span 1;
 }
 
 /* Footer */
