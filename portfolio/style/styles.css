@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100&family=Big+Shoulders+Inline+Text&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "alegreya sans", "big shoulders", sans-serif;
+  color: black;
+}
+section {
+  display: flexbox;
+  height: 100vh;
+  align-items: center;
+  padding: 100px;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  font-size: 2rem;
+  font-weight: 700px;
+  z-index: 10;
+}
+.home-content {
+  z-index: 10;
+  max-width: 600px;
+}
+.home-img {
+  height: 100%;
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.navigation {
+  display: none;
+}
