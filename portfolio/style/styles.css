@@ -245,7 +245,7 @@ nav a:hover {
 
 /* Forms Area */
 
-main #form-holder {
+#form-holder {
 	width: 900px;
 	padding: 20px;
 }
