@@ -4,41 +4,41 @@ Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100&family=Big+Shoulders+Inline+Text&display=swap");
 
 :root {
-	/* change the values below to your colors from your palette */
-	--primary-color: #f4f6f9;
-	--secondary-color: #0fa3b1;
-	--accent1-color: #ff9b42;
-	--accent2-color: #5928a3;
+  /* change the values below to your colors from your palette */
+  --primary-color: #f4f6f9;
+  --secondary-color: #0fa3b1;
+  --accent1-color: #ff9b42;
+  --accent2-color: #5928a3;
 
-	/* change the values below to your chosen font(s) */
-	--heading-font: "Big Shoulders Inline Text";
-	--paragraph-font: Alegreya Sans, Helvetica, sans-serif;
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Big Shoulders Inline Text";
+  --paragraph-font: Alegreya Sans, Helvetica, sans-serif;
 
-	/* these colors below should be chosen from among your palette colors above */
-	--headline-color-on-white: #396e94; /* headlines on a white background */
-	--headline-color-on-color: white; /* headlines on a colored background */
-	--paragraph-color-on-white: #396e94; /* paragraph text on a white background */
-	--paragraph-color-on-color: white; /* paragraph text on a colored background */
-	--paragraph-background-color: #396e94;
-	--nav-link-color: #396e94;
-	--nav-background-color: #d4ac0d;
-	--nav-hover-link-color: white;
-	--nav-hover-background-color: #396e94;
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396e94; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #396e94;
+  --nav-link-color: #396e94;
+  --nav-background-color: #d4ac0d;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396e94;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 4em;
-	font-size: 18px;
-	text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
 }
 img {
-	display: block;
-	margin: 0 auto;
-	padding: 10px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
 }
 h1,
 h2,
@@ -46,166 +46,179 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--heading-font);
-	color: var(--headline-color-on-white);
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
 }
 h2 {
-	text-align: center;
+  text-align: center;
 }
 hr {
-	height: 3px;
-	margin: 35px 0;
-	background: var(--accent1-color);
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
 }
 header {
-	padding: 1em;
-	text-align: center;
-	color: var(--headline-color-on-color);
-	background-color: var(--paragraph-background-color);
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
 }
 header > h1,
 header > h2 {
-	color: var(--headline-color-on-color);
+  color: var(--headline-color-on-color);
 }
 
 p {
-	font-family: var(--paragraph-font);
-	color: var(--paragraph-color-on-white);
-	padding: 1em;
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
 }
 .colors {
-	width: 100%;
-	min-width: 350px;
-	margin: 30px auto;
-	text-align: center;
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
 }
 .colors th {
-	background-color: #999;
+  background-color: #999;
 }
 .colors td {
-	width: 25%;
-	height: 3em;
+  width: 25%;
+  height: 3em;
 }
 
 .primary {
-	background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 .secondary {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 .accent1 {
-	background-color: var(--accent1-color);
+  background-color: var(--accent1-color);
 }
 .accent2 {
-	background-color: var(--accent2-color);
+  background-color: var(--accent2-color);
 }
 
 p.colored {
-	background-color: var(--paragraph-background-color);
-	color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
 }
 
 nav {
-	background-color: var(--nav-background-color);
-	line-height: 3em;
-	text-align: center;
-	font-size: 1.2em;
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
 }
 nav {
-	list-style-type: none;
-	display: flex;
+  list-style-type: none;
+  display: flex;
 }
 nav a {
-	padding: 1em;
-	min-width: 120px;
-	text-decoration: none;
-	padding: 10px;
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
 }
 nav a:link,
 nav a:visited {
-	color: var(--nav-link-color);
+  color: var(--nav-link-color);
 }
 nav a:hover {
-	color: var(--nav-hover-link-color);
-	background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 .sitemap {
-	display: grid;
-	justify-content: center;
+  display: grid;
+  justify-content: center;
 
-	grid-template-columns: repeat(10, 10%);
-	grid-template-rows: 3em 1.5em 1.5em 1.5em 3em;
-	grid-template-areas:
-		". . home home . ."
-		". . . top . ."
-		". left . center . right ."
-		". page2 . page3 . page4 .";
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . home home . ."
+    ". . . top . ."
+    ". left . center . right ."
+    ". page2 . page3 . page4 .";
 }
 .sitemap > div {
-	text-align: center;
+  text-align: center;
 }
 .sm-home {
-	grid-area: home;
-	background-color: #ccc;
-	line-height: 3em;
-	grid-column: 5/7;
-	grid-row: 1/2;
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+  grid-column: 5/7;
+  grid-row: 1/2;
 }
 .me {
-	height: 500px;
-	width: 400px;
+  height: 500px;
+  width: 400px;
+}
+.sm-menu {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+  grid-column: 5/7;
+  grid-row: 4/5;
 }
 .sm-about {
-	grid-area: page2;
-	background-color: #ccc;
-	line-height: 3em;
-	grid-column: 2/4;
-	grid-row: 5/6;
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+  grid-column: 2/4;
+  grid-row: 8/9;
 }
 .sm-resume {
-	grid-area: page3;
-	background-color: #ccc;
-	line-height: 3em;
-	grid-column: 5/7;
-	grid-row: 5/6;
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+  grid-column: 5/7;
+  grid-row: 8/9;
 }
 
 .sm-contact {
-	grid-area: page4;
-	background-color: #ccc;
-	line-height: 3em;
-	grid-column: 8/10;
-	grid-row: 5/6;
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+  grid-column: 8/10;
+  grid-row: 8/9;
 }
 
 .top {
-	grid-area: top;
-	border-left: 1px solid;
-	grid-column: 6;
-	grid-row: 2/4;
+  grid-area: top;
+  border-left: 1px solid;
+  grid-column: 6;
+  grid-row: 2/4;
+}
+.middle {
+  grid-area: top;
+  border-left: 1px solid;
+  grid-column: 6;
+  grid-row: 5/6;
 }
 
 .left {
-	grid-area: left;
-	border-top: 1px solid;
-	border-left: 1px solid;
-	grid-column: 3/6;
-	grid-row: 4;
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  grid-column: 3/6;
+  grid-row: 7/8;
 }
 
 .center {
-	grid-area: center;
-	border-top: 1px solid;
-	border-left: 1px solid;
-	grid-column: 6;
-	grid-row: 4;
+  grid-area: center;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  grid-column: 6;
+  grid-row: 7/8;
 }
 
 .right {
-	grid-area: right;
-	border-top: 1px solid;
-	border-right: 1px solid;
-	grid-column: 6/9;
-	grid-row: 4;
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  grid-column: 6/9;
+  grid-row: 7/8;
 }
