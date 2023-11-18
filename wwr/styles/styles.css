@@ -478,7 +478,7 @@ footer p:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1160px) {
   #hero,
   .home-grid {
     display: block;
@@ -557,7 +557,13 @@ footer p:hover {
     padding-left: 30px;
     padding-right: 30px;
   }
-
+  #form-holder {
+    padding: 1em;
+    border: none;
+    border-radius: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
   form {
     /* Center the form on the page */
     margin: 0 auto;
