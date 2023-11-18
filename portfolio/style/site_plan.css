@@ -161,7 +161,7 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
   grid-column: 5/7;
-  grid-row: 4/5;
+  grid-row: 5/6;
 }
 .sm-about {
   grid-area: page2;
@@ -190,13 +190,13 @@ nav a:hover {
   grid-area: top;
   border-left: 1px solid;
   grid-column: 6;
-  grid-row: 2/4;
+  grid-row: 2/5;
 }
 .middle {
   grid-area: top;
   border-left: 1px solid;
   grid-column: 6;
-  grid-row: 5/6;
+  grid-row: 6/7;
 }
 
 .left {
