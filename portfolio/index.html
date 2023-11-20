@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/styles.css" />
     <title>Pelican Prince</title>
@@ -10,46 +11,33 @@
     <header>
       <div class="logo">Pelican Prince</div>
       <div class="toggle"></div>
-      <div class="navigation"></div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="conatct.html">Contact Me</a></li>
-      </ul>
-      <div class="social-links"></div>
-      <ul>
-        <li>
-          <a href="https://facebook.com"></a>
-          <img src="img/facebook.png" target="_blank" alt="My Facebook" />
-        </li>
-        <li>
-          <a href="https://twitter.com"></a>
-          <img src="img/x.png" target="_blank" alt="My X" />
-        </li>
-        <li>
-          <a href="https://instagram.com"></a>
-          <img src="img/instagram.png" target="_blank" alt="My Instagram" />
-        </li>
-      </ul>
-      <a href="mailto:you@email.com" class="email-icon"
-        ><img src="img/at.png" alt="email"
-      /></a>
+
+      <div id="menu-button" onclick="toggleMenu()">
+        <img id="menu-icon" src="img/menu.png" alt="Menu" />
+      </div>
+      <div id="menu-content" style="display: none"></div>
     </header>
 
-    <section>
-      <img src="img/Me.png" class="home-img" alt="Me" />
+    <section class="home">
+      <img src="img/Me.png" class="home-img" alt="" />
       <div class="home-content">
-        <h1>Lorem ipsum dolor sit <br />amet consectetur</h1>
+        <h1>
+          i am your <br />
+          Huckle Berry.
+        </h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          officiis id obcaecati, consectetur eveniet molestias quo quaerat
-          repellendus, provident magni commodi cumque, aliquid deserunt fugiat
-          quis corrupti libero perspiciatis necessitatibus?
+          "Pelican Prince" is a beacon of innovation in the realm of web and
+          computer programming services. It is not just a portfolio site, but a
+          testament to the transformative power of practical expertise,
+          creativity, and a relentless pursuit of excellence. For those seeking
+          a partner who understands the intricacies of the digital landscape and
+          can craft bespoke solutions, "Pelican Prince" stands ready to elevate
+          your digital experience.
         </p>
-        <a href="contact.html" class="btn">Contact Me</a>
+        <a href="contact.html" class="btn">Get Intouch</a>
       </div>
     </section>
-    <script src="js/main.js"></script>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
