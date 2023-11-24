@@ -1,21 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;1,100&family=Big+Shoulders+Inline+Text&display=swap");
 
 :root {
-  --primary-color: #f60f20;
-  --secondary-color: #1b206e;
+  /* change the values below to your colors from your palette */
+  --primary-color: #ff9b42;
+  --secondary-color: #0fa3b1;
+  --accent1-color: #f4f6f9;
+  --accent2-color: #5928a3;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Big Shoulders Inline Text";
+  --paragraph-font: Alegreya Sans, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #396e94; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #396e94;
+  --nav-link-color: #396e94;
+  --nav-background-color: #d4ac0d;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #396e94;
 }
 
-/* BASE STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
-  font-family: "Poppins", sans-serif;
-  color: #111;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
 }
 
 h1 {
@@ -23,18 +44,25 @@ h1 {
   font-weight: 500;
 }
 
+h2 {
+  text-align: center;
+}
+
 p {
   margin: 20px 0 10px;
+  font-family: var(--paragraph-font);
   font-size: 1.1rem;
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 70vh;
   align-items: center;
   padding: 100px;
-  margin-top: 60px;
+  margin-top: 250px;
 }
 
 section.home {
@@ -47,7 +75,7 @@ section.home {
   cursor: pointer;
   display: inline-block;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--accent1-color);
   text-decoration: none;
   padding: 10px 30px;
   margin: 20px 0;
@@ -55,6 +83,7 @@ section.home {
 }
 
 .btn:hover {
+  color: var(--accent2-color);
   transform: scale(0.98);
 }
 
@@ -62,9 +91,15 @@ section.home {
   position: absolute;
   top: 30px;
   left: 100px;
+  font-family: var(--heading-font);
   font-size: 2rem;
   font-weight: 700;
   z-index: 20;
+}
+
+.logo-image {
+  padding: 60px 0;
+  padding-left: 115px;
 }
 
 /* NAVIGATION*/
@@ -72,6 +107,7 @@ section.home {
   display: flex;
   width: 100%;
   height: 100%;
+  font-family: var(--heading-font);
   font-size: 2.2rem;
   color: var(--secondary-color);
   text-decoration: none;
@@ -118,6 +154,7 @@ section.home {
 /* HOMEPAGE */
 .home-content {
   position: relative;
+  left: 220px;
   z-index: 10;
   max-width: 600px;
 }
@@ -125,12 +162,12 @@ section.home {
 .home-img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 220px;
   height: 100%;
 }
 
 /* SERVICES PAGE */
-.services {
+/* .services {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -155,9 +192,9 @@ section.home {
 
 .services .service .icon img {
   max-width: 100px;
-}
+} */
 
-/* WORK PAGE */
+/* WORK PAGE
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -201,10 +238,10 @@ section.home {
   text-decoration: none;
   border: 1px solid #fff;
   padding: 5px 15px;
-}
+} */
 
 /* CONTACT */
-.contact {
+/* .contact {
   position: relative;
   width: 100%;
   margin-top: 50px;
@@ -293,7 +330,7 @@ section.home {
 .contact-info .info-box .details p,
 .contact-info .info-box .details a {
   color: #111;
-}
+} */
 
 /* FOOTER */
 
@@ -319,9 +356,26 @@ section.home {
   color: blue;
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .services .service {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 1024px) {
   .home-img {
     display: none;
+  }
+
+  .home-content {
+    position: relative;
+    left: 0px;
+    padding: 0;
+    max-width: 200px;
   }
 
   .logo {
@@ -329,16 +383,20 @@ section.home {
     left: 40px;
     font-size: 1.5rem;
   }
+  .logo-image {
+    padding: 35px 0;
+    padding-left: 45px;
+  }
 
-  section {
-    padding: 100px 40px;
+  section.home {
+    padding: 0px 0px;
   }
 
   .navigation ul li a {
     font-size: 2rem;
   }
 
-  .services {
+  /* .services {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -366,14 +424,67 @@ section.home {
     margin-top: 20px;
     padding: 30px 30px 20px;
   }
-}
+} */
 
-@media (max-width: 768px) {
-  .services {
-    grid-template-columns: 1fr;
+@media (max-width: 1400px) {
+  .home-content {
+    position: relative;
+    left: 120px;
+    z-index: 10;
+    max-width: 600px;
   }
 
-  .services .service {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  .home-img {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    height: 100%;
   }
+
+  .logo {
+    top: 10px;
+    left: 40px;
+    font-size: 1.5rem;
+  }
+  .logo-image {
+    padding: 35px 0;
+    padding-left: 45px;
+  }
+
+  section {
+    padding: 50px 40px;
+  }
+
+  .navigation ul li a {
+    font-size: 2rem;
+  }
+
+  /* .services {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
+  /* .contact {
+    flex-direction: column;
+  } */
+
+  /* .contact-form {
+    width: 100%;
+    padding: 30px 30px 20px;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+
+  .contact-form .input50,
+  .contact-form .input100 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 30px 20px;
+  } */
 }
