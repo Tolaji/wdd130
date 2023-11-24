@@ -59,9 +59,9 @@ p {
 section {
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 20vh;
   align-items: center;
-  padding: 100px;
+  padding: 0 100px;
   margin-top: 250px;
 }
 
@@ -98,7 +98,8 @@ section.home {
 }
 
 .logo-image {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 0;
   padding-left: 115px;
 }
 
@@ -174,6 +175,7 @@ section.home {
   gap: 10px;
   background-color: var(--primary-color);
   color: #fff;
+  align-items: center;
   text-align: center;
   padding: 10px;
   position: fixed;
