@@ -59,15 +59,24 @@ p {
 section {
   display: flex;
   flex-direction: column;
-  height: 20vh;
+  height: 70vh;
   align-items: center;
   padding: 0 100px;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 section.home {
   flex-direction: row;
   margin-top: 0;
+}
+
+section.navigation-menu {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  align-items: center;
+  padding: 0 100px;
+  margin-top: 150px;
 }
 
 /* BUTTON */
@@ -98,8 +107,7 @@ section.home {
 }
 
 .logo-image {
-  padding-top: 60px;
-  padding-bottom: 0;
+  padding: 60px 0;
   padding-left: 115px;
 }
 
@@ -174,7 +182,8 @@ section.home {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--accent1-color);
+  font-family: var(--paragraph-font);
   align-items: center;
   text-align: center;
   padding: 10px;
