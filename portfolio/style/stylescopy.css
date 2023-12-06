@@ -167,7 +167,7 @@ section.home {
 }
 
 /* SERVICES PAGE */
-/* .services {
+.services {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -192,9 +192,9 @@ section.home {
 
 .services .service .icon img {
   max-width: 100px;
-} */
+}
 
-/* WORK PAGE
+/* WORK PAGE */
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -238,10 +238,10 @@ section.home {
   text-decoration: none;
   border: 1px solid #fff;
   padding: 5px 15px;
-} */
+}
 
 /* CONTACT */
-/* .contact {
+.contact {
   position: relative;
   width: 100%;
   margin-top: 50px;
@@ -330,7 +330,7 @@ section.home {
 .contact-info .info-box .details p,
 .contact-info .info-box .details a {
   color: #111;
-} */
+}
 
 /* FOOTER */
 
