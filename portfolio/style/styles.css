@@ -267,37 +267,37 @@ section.reached-container{
 /* SKILLS INDICATOR */
 
 .html {
-  width: 90%;
+  width: 65%;
   background-color: #04AA6D;
 }
 
 .css {
-  width: 80%;
+  width: 50%;
   background-color: #2196F3;
 }
 
 .js {
-  width: 65%;
+  width: 10%;
   background-color: #f44336;
 }
 
 .python {
-  width: 60%;
+  width: 40%;
   background-color: #83c900;
 }
 
 .network {
-  width: 60%;
+  width: 85%;
   background-color: #0f0b0b;
 }
 
 .lan-wifi{
-  width: 60%;
+  width: 90%;
   background-color: brown;
 }
 
 .cctv{
-  width: 60%;
+  width: 100%;
   background-color: purple;
 }
 
