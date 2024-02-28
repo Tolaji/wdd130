@@ -896,6 +896,20 @@ iframe{
     grid-template-columns: 1fr;
     align-items: center;
   } 
+
+  /* CONTACT */
+
+  .contact-layout {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  bottom: 0;
+
+}
 }
 
 
